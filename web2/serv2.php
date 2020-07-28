@@ -170,6 +170,7 @@ font-size: 20px;
 <?php
 require 'vendor/autoload.php';
 
+$client = new \Goutte\Client();
 $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
 $form = $crawler->selectButton('ytp-play-button ytp-button')->form();
 ?>
