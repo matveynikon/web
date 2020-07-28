@@ -170,10 +170,9 @@ font-size: 20px;
 <?php
 require 'vendor/autoload.php';
 
-$client = new \Goutte\Client();
-$crawler = $client->request('GET', 'https://dev.to/sayopaul/web-scraping-in-php-using-goutte---part-2-5e66');
-$pageH1 = $crawler->filter('h1')->text();
-var_dump($pageH1);
+$crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
+sleep(mt_rand(3, 7));
+$form = $crawler->selectButton('ytp-play-button ytp-button')->form();
 ?>
 <ul>
     <li><b><a href="css.html"><font color="black">Home</font></a></b></li>
