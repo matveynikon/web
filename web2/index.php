@@ -197,7 +197,7 @@ h5 {
 
 </ul>
 <?php
-function myFunction() {
+function myFunc() {
 require 'vendor/autoload.php';
 
 $client = new \Goutte\Client();
@@ -216,7 +216,7 @@ sleep(mt_rand(1, 3));
   <input type="text" value=""><br><br>
   <label>Maximum watch time:</label><br>
   <input type="text" value=""><br><br>
-  <button type="button" onclick="myFunction()">Try it</button>
+  <button type="button" value="myFunc">Try it</button>
 </form>
 <h1>Increase your watch time and rankings quickly!</h1>
     
