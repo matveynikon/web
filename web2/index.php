@@ -185,27 +185,6 @@ h5 {
 
 }
 
-h5:hover {
-  Float: top;
-  Font Family: Arial, Helvetica, sans-serif;
-  width: 300px;
-  height: 50px;
-  text-indent: 45px;
-  background: turquoise;
-  position: absolute;
-  border-radius: 20px;
-  display: inline;
-  top: 200%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  opacity: 0.6;
-
-}
-
 </style>
 </head>
 <body>
