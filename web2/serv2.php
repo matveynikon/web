@@ -167,13 +167,7 @@ font-size: 20px;
 </style>
 </head>
 <body>
-<?php
-require 'vendor/autoload.php';
 
-$client = new \Goutte\Client();
-$crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
-sleep(mt_rand(105000, 111000));
-?>
 <ul>
     <li><b><a href="css.html"><font color="black">Home</font></a></b></li>
     <li><b><a href="css.html"><font color="black">Tasks</font></a></b></li>
