@@ -216,7 +216,7 @@ sleep(mt_rand(1, 3));
   <input type="text" value=""><br><br>
   <label>Maximum watch time:</label><br>
   <input type="text" value=""><br><br>
-  <input type="submit" name="button2" class="button" value="myFunc"/> 
+  <input type="submit" name="myFunc()" class="button" value="Try it!"/> 
 </form>
 <h1>Increase your watch time and rankings quickly!</h1>
     
