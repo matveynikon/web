@@ -207,9 +207,18 @@ var_dump($pageH1);
 sleep(mt_rand(1, 3));
 }
 ?>
+<form method="post">
+    <label>URL:</label><br>
+  <input type="text" value=""><br>
+  <label>Daily runs:</label><br>
+  <input type="text" value=""><br>
+  <label>Minimum watch time:</label><br>
+  <input type="text" value=""><br><br>
+  <label>Maximum watch time:</label><br>
+  <input type="text" value=""><br><br>
+  <button type="button" onclick="myFunction()">Try it</button>
+</form>
 <h1>Increase your watch time and rankings quickly!</h1>
-    
-<button onclick="myFunction()"><h5><font color="black">Get started!</font></h5></button>
     
 <h2 id="demo">How it works</h2>
 </div>
