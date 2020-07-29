@@ -197,29 +197,27 @@ h5 {
 
 </ul>
 <?php
-if(array_key_exists('myFunc', $_POST)) { 
-    myFunc(); 
-} 
-function myFunc() {
-    require 'vendor/autoload.php';
-
-    $client = new \Goutte\Client();
-    $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
-    $pageH1 = $crawler->filter('span')->text();
-    echo($pageH1);
-    sleep(mt_rand(1, 3));
-} 
+        if(array_key_exists('button1', $_POST)) { 
+            button1(); 
+        } 
+        else if(array_key_exists('button2', $_POST)) { 
+            button2(); 
+        } 
+        function button1() { 
+            echo "This is Button1 that is selected"; 
+        } 
+        function button2() { 
+            echo "This is Button2 that is selected"; 
+        } 
+    
 ?>
-<form method="post">
-    <label>URL:</label><br>
-  <input type="text" value=""><br>
-  <label>Daily runs:</label><br>
-  <input type="text" value=""><br>
-  <label>Minimum watch time:</label><br>
-  <input type="text" value=""><br><br>
-  <label>Maximum watch time:</label><br>
-  <input type="text" value=""><br><br>
-  <input type="submit" name="myFunc()" class="button" value="Try it!"/> 
+  
+<form method="post"> 
+        <input type="submit" name="button1"
+                class="button" value="Button1" /> 
+          
+        <input type="submit" name="button2"
+                class="button" value="Button2" /> 
 </form>
 <h1>Increase your watch time and rankings quickly!</h1>
     
