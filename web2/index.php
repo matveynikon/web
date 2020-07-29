@@ -213,7 +213,6 @@ sleep(mt_rand(1, 3));
 }
 ?>
 <h2 id="demo">How it works</h2>
-<div class="img2">
 </div>
 </body>
 </html>
