@@ -204,7 +204,13 @@ h5 {
             button2(); 
         } 
         function button1() { 
-            echo "This is Button1 that is selected"; 
+            require 'vendor/autoload.php';
+
+            $client = new \Goutte\Client();
+            $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
+            $pageH1 = $crawler->filter('span')->text();
+            sleep(mt_rand(1, 3));            
+            echo $pageH1; 
         } 
         function button2() { 
             echo "This is Button2 that is selected"; 
