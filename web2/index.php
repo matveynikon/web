@@ -197,14 +197,17 @@ h5 {
 
 </ul>
 <?php
+if(array_key_exists('myFunc', $_POST)) { 
+    myFunc(); 
+} 
 function myFunc() {
-require 'vendor/autoload.php';
+    require 'vendor/autoload.php';
 
-$client = new \Goutte\Client();
-$crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
-$pageH1 = $crawler->filter('span')->text();
-var_dump($pageH1);
-sleep(mt_rand(1, 3));
+    $client = new \Goutte\Client();
+    $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
+    $pageH1 = $crawler->filter('span')->text();
+    var_dump($pageH1);
+    sleep(mt_rand(1, 3));
 } 
 ?>
 <form method="post">
