@@ -220,15 +220,19 @@ h5:hover {
 
 <h1>Increase your watch time and rankings quickly!</h1>
     
-<button onclick="myFunction()"><h5><a href="serv2.php"><font color="black">Get started!</font></a></h5></button>
+<button onclick="myFunction()"><h5><font color="black">Get started!</font></h5></button>
 
-<p id="demo4"></p>
-
-<script>
+<?php
 function myFunction() {
-  document.getElementById("demo4").innerHTML = "Successfully launched!";
+require 'vendor/autoload.php';
+
+$client = new \Goutte\Client();
+$crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
+$pageH1 = $crawler->filter('span')->text();
+var_dump($pageH1);
+sleep(mt_rand(1, 3));
 }
-</script>
+?>
 <h2 id="demo">How it works</h2>
 <div class="img2">
 </div>
