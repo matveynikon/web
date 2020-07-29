@@ -196,11 +196,6 @@ h5 {
     <li><b><a href="serv2.php" class="next">Tasks</a></b></li>
 
 </ul>
-
-<h1>Increase your watch time and rankings quickly!</h1>
-    
-<button onclick="myFunction()"><h5><font color="black">Get started!</font></h5></button>
-
 <?php
 function myFunction() {
 require 'vendor/autoload.php';
@@ -212,6 +207,10 @@ var_dump($pageH1);
 sleep(mt_rand(1, 3));
 }
 ?>
+<h1>Increase your watch time and rankings quickly!</h1>
+    
+<button onclick="myFunction()"><h5><font color="black">Get started!</font></h5></button>
+    
 <h2 id="demo">How it works</h2>
 </div>
 </body>
