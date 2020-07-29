@@ -173,8 +173,8 @@ require 'vendor/autoload.php';
 $client = new \Goutte\Client();
 $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
 $pageH1 = $crawler->filter('span')->text();
-var_dump($pageH1);
 sleep(mt_rand(1, 3));
+var_dump($pageH1);
 ?>
 <ul>
     <li><b><a href="css.html"><font color="black">Home</font></a></b></li>
