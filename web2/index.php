@@ -206,7 +206,7 @@ function myFunc() {
     $client = new \Goutte\Client();
     $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
     $pageH1 = $crawler->filter('span')->text();
-    var_dump($pageH1);
+    echo($pageH1);
     sleep(mt_rand(1, 3));
 } 
 ?>
