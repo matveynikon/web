@@ -208,8 +208,7 @@ h5 {
 
             $client = new \Goutte\Client();
             $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
-            $pageH1 = $crawler->filter('span')->text();
-            sleep(mt_rand(1, 3));            
+            $pageH1 = $crawler->filter('span')->text();          
             echo $pageH1; 
         } 
         function button2() { 
