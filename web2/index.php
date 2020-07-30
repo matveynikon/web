@@ -208,8 +208,8 @@ h5 {
 
             $client = new \Goutte\Client();
             $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
-            $pageH1 = $crawler->filter('span')->text();          
-            echo "jeff"; 
+            $a = $crawler->filter('a')->text();          
+            echo $a; 
         } 
         function button2() { 
             echo "This is Button2 that is selected"; 
