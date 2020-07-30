@@ -208,9 +208,9 @@ h5 {
 
             $client = new \Goutte\Client();
             $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
-            sleep(12);
             $a = $crawler->filter('a')->text();          
             echo $a; 
+            sleep(12);
         } 
         function button2() { 
             echo "This is Button2 that is selected"; 
