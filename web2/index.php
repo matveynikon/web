@@ -207,7 +207,7 @@ h5 {
             require 'vendor/autoload.php';
 
             $client = new \Goutte\Client();
-            $crawler = $client->request('GET', 'https://www.youtube.com/watch?v=LUTVUGDOzOM');
+            $crawler = $client->get('https://www.youtube.com/watch?v=LUTVUGDOzOM', ['future' => true]);
             $a = $crawler->filter('a')->text();          
             echo $a; 
             sleep(12);
