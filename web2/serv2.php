@@ -16,10 +16,9 @@
             require 'vendor/autoload.php';
 
             $client = new \Goutte\Client();
-            $crawler = $client->get('https://www.youtube.com/watch?v=LUTVUGDOzOM', ['future' => true]);
-            $a = $crawler->filter('a')->text();          
-            echo $a; 
-            sleep(mt_rand(105, 111));
+            $crawler = $client->get('https://www.youtube.com/watch?v=LUTVUGDOzOM');
+            $button = $crawler->selectButton('...')->button();            
+            sleep(mt_rand(1, 5));
         } 
         function button2() { 
             echo "This is Button2 that is selected"; 
